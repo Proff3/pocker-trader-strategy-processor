@@ -1,0 +1,2 @@
+docker build -t pron9/ema-kafka-consumer:1.0.0 .
+docker push pron9/ema-kafka-consumer:1.0.0

@@ -1,0 +1,22 @@
+group-id:
+  baeldung
+topic:
+  candlesFromTinkoff
+server:
+  port:
+    1212
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/surfer
+    username: root
+    password: WOwnib846
+  kafka:
+    bootstrap-servers: localhost:9091
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      properties:
+        spring.json.use.type.headers: false
+    streams:
+      replication-factor: 1
